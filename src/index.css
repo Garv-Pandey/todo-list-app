@@ -13,56 +13,97 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
 body {
   margin: 0;
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
 }
 
 h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+  font-size: 28px;
+  margin-bottom: 15px;
+  text-align: center;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
+/* Style for input box */
+.text-box {
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #444;
+  border-radius: 5px;
+  outline: none;
+  width: 250px;
+  background-color: #333;
+  color: white;
+  margin-bottom: 10px;
+  margin-left:0px auto ;
+}
+
+/* Input box focus effect */
+.text-box:focus {
+  border-color: limegreen;
+}
+
+/* Style for Create button */
+.create-btn {
+  padding: 10px 15px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: limegreen;
+  color: white;
   cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+  transition: background-color 0.3s ease;
+  margin-left: 10px;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+.create-btn:hover {
+  background-color: green;
+}
+
+/* Style for task list */
+ol {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+  width: 300px;
+}
+
+/* Style for each task */
+.task {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border: 2px solid #444;
+  background-color: #333;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+/* Style for button container */
+.btn {
+  display: flex;
+  gap: 5px;
+}
+
+/* Style for buttons */
+.btn button {
+  padding: 5px 8px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  background-color: gray;
+  color: white;
+}
+
+.btn button:hover {
+  background-color: limegreen;
 }
